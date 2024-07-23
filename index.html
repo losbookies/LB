@@ -19,6 +19,7 @@
             color: white; /* White text color */
             padding: 20px; /* Padding inside the header */
             text-align: center; /* Center align the text */
+            position: relative;
         }
         /* Styling for the navigation bar */
         nav {
@@ -37,14 +38,15 @@
         section {
             padding: 20px; /* Padding inside each section */
         }
-        /* Styling for the footer */
-        footer {
+        /* Styling for the contact section */
+        #contact {
+            position: fixed; /* Fix the contact section position */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            background-color: #0047ab; /* Dark blue background */
             color: white; /* White text color */
-            text-align: center; /* Center align the text */
-            padding: 20px 10px; /* Padding inside the footer */
-            position: fixed; /* Fix the footer at the bottom */
-            width: 100%; /* Full width footer */
-            bottom: 0; /* Position it at the bottom */
+            padding: 10px; /* Padding inside the section */
+            border-radius: 5px; /* Rounded corners */
         }
         /* Styling for the section with the background image */
         .background-image {
@@ -71,7 +73,6 @@
     <a href="#book-club">Los Bookies Book Club</a>
     <a href="#themes">Themes</a>
     <a href="#members">Members</a>
-    <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
@@ -129,7 +130,7 @@
 
 <section id="contact">
     <h2>Contact</h2>
-    <footer>
+    <div>
         <!-- Contact information -->
         <p>Get in touch with us via email or social media:</p>
         <ul>
@@ -137,8 +138,7 @@
             <li>Twitter: <a href="https://twitter.com/yourprofile" target="_blank">@yourprofile</a></li>
             <!-- Add more social media links here -->
         </ul>
-        <p>&copy; 2024 Los Bookies. All rights reserved.</p>
-    </footer>
+    </div>
 </section>
 
 </body>
